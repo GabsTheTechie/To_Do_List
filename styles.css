@@ -56,7 +56,7 @@
         cursor: pointer;
 
     }
-    #task{
+    #tasks{
         background-color: white;
         padding: 30px 20px;
         margin-top: 60px;
@@ -64,4 +64,33 @@
         box-shadow: 0 15px 30px rgba(0,0,0,0.3);
         width: 100%;
         position: relative;
+    }
+    .tasks{
+        background-color: #ffffff;
+        height: 50px;
+        padding: 5px 10px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #d1d3d4;
+        cursor: pointer;
+    }
+    .task span{
+        font-family: 'Poppins',sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .task button{
+        background-color: #8052ec;
+        color: #ffffff;
+        height: 100%;
+        width: 40px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+    .completed{
+        text-decoration: line-through;
     }
