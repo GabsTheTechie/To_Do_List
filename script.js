@@ -1,36 +1,3 @@
-// // Add validation for empty inpute field
-// document.querySelector('#push').onclick = function(){
-//      if(document.querySelector('#newtask input').ariaValueMax.length === 0)
-//      {
-//         alert('Please Enter a Task')
-//      } else{
-//         document.querySelector('#tasks').innerHTML += `
-//             <div class="tasks">
-//                 <span id="taskname">
-//                     ${document.querySelector('#newtask input').value}
-//                 </span>
-//                 <button class="delete">
-//                 <i class="fa-solid fa-trash-can"></i>
-//                 </div>
-//             `;
-//             var current_tasks = document.querySelectorAll(".delete");
-//             for(var i=0; i<current_tasks.length; i++){
-//                 current_tasks[i].onclick = function(){
-//                     this.parentNode.remove();
-//                 }
-//             }
-    
-//             var tasks = document.querySelectorAll(".tasks");
-//             for(var i=0; i<tasks.length; i++){
-//                 tasks[i].onclick = function(){
-//                     this.classList.toggle('completed');
-//                 }
-//             }
-    
-//             document.querySelector("#newtask input").value = "";
-//         }
-//      }
-
 const todoInput = document.querySelector('#todo_input');
 const todoButton = document.querySelector('#push');
 const todoList = document.querySelector('#todo_list');
@@ -55,7 +22,7 @@ function addTodo(event) {
     //check mark BUTTON
     const completedButton = document.createElement('button');
     completedButton.innerHTML = '<i class="fas fa-check"></i>';
-    completedButton.classList.add('complete_btn') // Change button
+    completedButton.classList.add('complete_btn') // edit button name
     todoDiv.appendChild(completedButton);
     //delete BUTTON
     const deleteButton = document.createElement('button');
@@ -86,3 +53,37 @@ function deleteCheck(e) {
         todo.classList.toggle("completedItem")
     }
 }
+=======
+// Add validation for empty inpute field
+document.querySelector('#push').onclick = function(){
+     if(document.querySelector('#newtask input').ariaValueMax.length ==0)
+     {
+        alert('Please Enter a Task')
+     } else{
+        document.querySelector('#tasks').innerHTML += `
+            <div class="tasks">
+                <span id="taskname">
+                    ${document.querySelector('#newtask input').value}
+                </span>
+                <button class="delete">
+                <i class="fa-solid fa-trash-can"></i>
+                </div>
+            `;
+            var current_tasks = document.querySelectorAll(".delete");
+            for(var i=0; i<current_tasks.length; i++){
+                current_tasks[i].onclick = function(){
+                    this.parentNode.remove();
+                }
+            }
+    
+            var tasks = document.querySelectorAll(".tasks");
+            for(var i=0; i<tasks.length; i++){
+                tasks[i].onclick = function(){
+                    this.classList.toggle('completed');
+                }
+            }
+    
+            document.querySelector("#newtask input").value = "";
+        }
+     }
+
