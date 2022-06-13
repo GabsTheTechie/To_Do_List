@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List Project</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple To Do List</title>
+    <!-- google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap" rel="stylesheet" />
+    <!-- font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="styles.css" />
 </head>
+<!-- As a heading 
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Simple To Do List </span>
+  </nav>
+  -->
+
 <body>
-    <!-- Header -->
-    <!-- Input with Button -->
-    <!-- List of Tasks -->
+    <div class="container">
+        <div class="row">
+            <div clas="col">
+                <h1 class="center-align">To Do List</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="newtask">
+            <input type="text" placeholder="Task to be done.." />
+            <button id="push">Add</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col" id="tasks"></div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
+
 </html>
