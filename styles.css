@@ -149,10 +149,9 @@ main {
 	opacity: 0.6;
 }
 
-.task .actions .edit {
-	background-image: linear-gradient(to right, var(--pink), var(--purple));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.task .actions .complete {
+	background-color: green;
+    color: white;
 }
 
 .task .actions .delete {
