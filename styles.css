@@ -15,6 +15,7 @@ header {
 	width: 100%;
 	margin: 0 auto;
     
+    
 }
 
 header h1{ 
@@ -22,6 +23,7 @@ header h1{
 	font-weight: 300;
 	color: var(--grey);
 	margin-bottom: 1rem;
+    
 }
 
 .container{
@@ -92,6 +94,7 @@ main {
 
 .task-list {
 	padding: 1rem;
+    
 }
 
 .task-list h2 {
@@ -109,6 +112,7 @@ main {
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-bottom: 1rem;
+    background-color: white;
 }
 
 .task .content {
