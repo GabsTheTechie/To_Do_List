@@ -47,7 +47,7 @@ window.addEventListener('load', () => {
 		task_edit_el.addEventListener('click', (e) => {
 			if (task_edit_el.innerText.toLowerCase() == "complete") {
 				task_edit_el.innerText = "Complete";
-                list_el.sttle.textDecoration = "line-through";
+                task_input_el.style.textDecoration = "line-through";
 				//task_input_el.removeAttribute("readonly");
 				//task_input_el.focus();
 			} else {
